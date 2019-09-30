@@ -45,6 +45,24 @@ border:1px solid #646464;
     })(window,document);
 </script>
 </div>
-
+<script src="https://static.tctip.com/tctip-1.0.0.min.js"></script>
+<script>
+    new tctip({
+        top: '20%',
+        button: {
+            id: 9,
+            type: 'dashang',
+        },
+        list: [
+          {
+              type: 'alipay',
+              qrImg: './images/zhifubao.jpg'
+          }, {
+              type: 'wechat',
+              qrImg: './images/weixin.png'
+          }
+        ]
+    }).init()
+</script>
 </body>
 </html>
